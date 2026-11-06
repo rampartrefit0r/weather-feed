@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "published_at_utc": "2026-11-06T12:28:33.451314Z",
+  "observed_at_utc": "2026-11-06T12:28:15Z",
+  "data_age_seconds": 18,
+  "rain_sensor": "tipping_bucket",
+  "rainfall": {
+    "rate_mm_per_hour": 0.0,
+    "event_mm": 0.5,
+    "hourly_mm": null,
+    "daily_mm": 0.5,
+    "weekly_mm": 21.1,
+    "monthly_mm": 21.1,
+    "yearly_mm": 559.1
+  },
+  "outdoor": {
+    "temperature_c": 11.9,
+    "feels_like_c": 11.9,
+    "apparent_temperature_c": 10.3,
+    "dew_point_c": 9.3,
+    "humidity_percent": 84
+  },
+  "wind": {
+    "speed_kmh": 7.6,
+    "gust_kmh": 9.4,
+    "direction_degrees": 272
+  },
+  "pressure": {
+    "relative_hpa": 1009.3,
+    "absolute_hpa": 1016.8
+  },
+  "solar": {
+    "irradiance_w_m2": 0.0,
+    "uv_index": 0
+  }
+}
