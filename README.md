@@ -1,4 +1,4 @@
-# Altona weather feed
+# Weather feed
 
 This repository publishes a small, privacy-safe snapshot from a private Ecowitt weather station. GitHub Actions refreshes [`weather.json`](weather.json) every two hours and can also be run manually.
 
