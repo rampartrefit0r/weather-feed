@@ -1,0 +1,45 @@
+name: Update Ecowitt weather feed
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */2 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ecowitt-weather-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Fetch and sanitise Ecowitt measurements
+        env:
+          ECOWITT_APP_KEY: ${{ secrets.ECOWITT_APP_KEY }}
+          ECOWITT_API_KEY: ${{ secrets.ECOWITT_API_KEY }}
+          ECOWITT_MAC: ${{ secrets.ECOWITT_MAC }}
+        run: python3 scripts/fetch_ecowitt.py weather.json
+
+      - name: Publish snapshot
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- weather.json
+          if git diff --cached --quiet; then
+            echo "No weather data change to publish."
+            exit 0
+          fi
+          git commit -m "Update weather readings"
+          if ! git push; then
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
+          fi
