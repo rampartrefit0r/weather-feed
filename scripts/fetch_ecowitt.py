@@ -216,7 +216,7 @@ def fetch_payload(app_key: str, api_key: str, mac: str) -> dict[str, Any]:
     }
     request = urllib.request.Request(
         f"{API_ENDPOINT}?{urllib.parse.urlencode(parameters)}",
-        headers={"Accept": "application/json", "User-Agent": "altona-weather-feed/1"},
+        headers={"Accept": "application/json", "User-Agent": "weather-feed/1"},
     )
     for attempt in range(3):
         try:
