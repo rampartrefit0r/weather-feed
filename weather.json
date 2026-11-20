@@ -1,33 +1,33 @@
 {
   "schema_version": 1,
-  "published_at_utc": "2026-11-20T15:10:15.605720Z",
-  "observed_at_utc": "2026-11-20T15:08:31Z",
-  "data_age_seconds": 104,
+  "published_at_utc": "2026-11-20T17:12:22.921791Z",
+  "observed_at_utc": "2026-11-20T17:11:32Z",
+  "data_age_seconds": 50,
   "rain_sensor": "tipping_bucket",
   "rainfall": {
     "rate_mm_per_hour": 0.0,
-    "event_mm": 7.6,
+    "event_mm": 7.9,
     "hourly_mm": null,
-    "daily_mm": 0.0,
-    "weekly_mm": 11.9,
-    "monthly_mm": 57.4,
-    "yearly_mm": 595.4
+    "daily_mm": 0.3,
+    "weekly_mm": 12.2,
+    "monthly_mm": 57.7,
+    "yearly_mm": 595.7
   },
   "outdoor": {
-    "temperature_c": 17.6,
-    "feels_like_c": 17.6,
-    "apparent_temperature_c": 19.9,
-    "dew_point_c": 16.8,
+    "temperature_c": 16.5,
+    "feels_like_c": 16.5,
+    "apparent_temperature_c": 18.1,
+    "dew_point_c": 15.7,
     "humidity_percent": 95
   },
   "wind": {
-    "speed_kmh": 0.0,
-    "gust_kmh": 0.0,
-    "direction_degrees": 348
+    "speed_kmh": 1.4,
+    "gust_kmh": 1.8,
+    "direction_degrees": 342
   },
   "pressure": {
-    "relative_hpa": 1002.8,
-    "absolute_hpa": 1010.3
+    "relative_hpa": 1003.3,
+    "absolute_hpa": 1010.8
   },
   "solar": {
     "irradiance_w_m2": 0.0,
