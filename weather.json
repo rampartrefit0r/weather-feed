@@ -1,36 +1,36 @@
 {
   "schema_version": 1,
-  "published_at_utc": "2026-11-27T07:38:21.626746Z",
-  "observed_at_utc": "2026-11-27T07:38:02Z",
-  "data_age_seconds": 19,
+  "published_at_utc": "2026-11-27T09:26:02.286505Z",
+  "observed_at_utc": "2026-11-27T09:25:48Z",
+  "data_age_seconds": 14,
   "rain_sensor": "tipping_bucket",
   "rainfall": {
-    "rate_mm_per_hour": 0.0,
-    "event_mm": 12.2,
+    "rate_mm_per_hour": 1.2,
+    "event_mm": 16.0,
     "hourly_mm": null,
-    "daily_mm": 12.2,
-    "weekly_mm": 14.7,
-    "monthly_mm": 72.4,
-    "yearly_mm": 610.4
+    "daily_mm": 16.0,
+    "weekly_mm": 18.5,
+    "monthly_mm": 76.2,
+    "yearly_mm": 614.2
   },
   "outdoor": {
-    "temperature_c": 22.4,
-    "feels_like_c": 22.4,
-    "apparent_temperature_c": 26.2,
-    "dew_point_c": 20.1,
-    "humidity_percent": 87
+    "temperature_c": 21.0,
+    "feels_like_c": 21.0,
+    "apparent_temperature_c": 24.6,
+    "dew_point_c": 19.7,
+    "humidity_percent": 92
   },
   "wind": {
     "speed_kmh": 0.0,
     "gust_kmh": 0.0,
-    "direction_degrees": 127
+    "direction_degrees": 168
   },
   "pressure": {
     "relative_hpa": 1006.2,
     "absolute_hpa": 1013.7
   },
   "solar": {
-    "irradiance_w_m2": 85.6,
+    "irradiance_w_m2": 0.4,
     "uv_index": 0
   }
 }
